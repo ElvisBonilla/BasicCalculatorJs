@@ -1,0 +1,55 @@
+* {
+    color: white;
+}
+.calculadora {
+    display: inline-block;
+    background-color: rgb(92, 88, 88);
+    margin: 0;
+    padding: 0;
+    border: 2px solid;
+}
+.display {
+    text-align:right;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    transition: background-color 0.55s ease-in-out;
+}
+.btn:hover {
+    border: none;
+    background-color: rgba(128, 128, 128, 0.658);
+}
+
+.numero {
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.simbolos{
+    background-color: rgba(53, 53, 53, 0.623);
+}
+
+input[type="text"]{
+    background-color:transparent;
+    border:0px;
+    width:250px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    pointer-events: none;
+}
+
+input[name="display1"]{
+    height: 20px;
+    font-size: 16px;
+}
+input[name="display2"]{
+    margin-bottom: 5px;
+    font-size: 26px;
+}

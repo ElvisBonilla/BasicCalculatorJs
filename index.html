@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <form action="#" name="calc" id="calculadora">
+            <table>
+                <tr>
+                <td colspan="4">
+                    <input type="text" name="display1" id="display1">
+                    <br>
+                    <input type="text" name="display2" id="display2" value="0">
+                    <br>
+                </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn simbolos" value="CE" onclick="borrarD2()"></td>
+                    <td><input type="button" class="btn simbolos" value="C" onclick="borrarD1()"></td>
+                    <td><input type="button" class="btn simbolos" value="◄" onclick="borrarC()"></td>
+                    <td><input type="button" class="btn simbolos" value="÷" onclick="option('/')"></td>
+                </tr>
+                <tr>
+                    <td><input name="num7" type="button" class="btn numero" value="7" onclick="escribirNum(7)"></td>
+                    <td><input name="num8" type="button" class="btn numero" value="8" onclick="escribirNum(8)"></td>
+                    <td><input name="num9" type="button" class="btn numero" value="9" onclick="escribirNum(9)"></td>
+                    <td><input type="button" class="btn simbolos" value="×" onclick="option('*')"></td>
+                </tr>
+                <tr>
+                    <td><input name="num4" type="button" class="btn numero" value="4" onclick="escribirNum(4)"></td>
+                    <td><input name="num3" type="button" class="btn numero" value="5" onclick="escribirNum(5)"></td>
+                    <td><input name="num2" type="button" class="btn numero" value="6" onclick="escribirNum(6)"></td>
+                    <td><input type="button" class="btn simbolos" value="-" onclick="option('-')"></td>
+                </tr>
+                <tr>
+                    <td><input name="num1" type="button" class="btn numero" value="1" onclick="escribirNum(1)"></td>
+                    <td><input name="num2" type="button" class="btn numero" value="2" onclick="escribirNum(2)"></td>
+                    <td><input name="num3" type="button" class="btn numero" value="3" onclick="escribirNum(3)"></td>
+                    <td><input type="button" class="btn simbolos" value="+" onclick="option('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn numero" value="±" onclick="masmenos()"></td>
+                    <td><input name="num0" type="button" class="btn numero" value="0" onclick="escribirNum(0)"></td>
+                    <td><input type="button" class="btn numero" value="," onclick="escribirNum('.')"></td>
+                    <td><input type="button" class="btn" value="=" onclick="option('=')"></td>
+
+                </tr>
+            </table>
+            <div></div>
+        </form>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
