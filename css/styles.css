@@ -1,12 +1,23 @@
-* {
-    color: white;
+body {
+    background-color: rgba(0, 0, 0, 0.794);
 }
-.calculadora {
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+h1, footer{
+    text-align: center;
+    color: rgb(119, 127, 241);
+}
+
+.calculator {
     display: inline-block;
     background-color: rgb(92, 88, 88);
     margin: 0;
     padding: 0;
     border: 2px solid;
+    
 }
 .display {
     text-align:right;
@@ -44,7 +55,7 @@ input[type="text"]{
     text-align: right;
     pointer-events: none;
 }
-
+input[type="button"]{ color: white; }
 input[name="display1"]{
     height: 20px;
     font-size: 16px;

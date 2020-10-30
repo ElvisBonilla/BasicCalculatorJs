@@ -19,14 +19,14 @@ function borrarC() {
 function borrarD1() {
     acumulador = 0;
     text = "";
-    display2.value = "";
+    display2.value = 0;
+    display1.value = "";
 }
 
 function borrarD2() {
     text = "";
-    display2.value = text;
+    display2.value = 0;
 }
-
 
 function option(simbolo) {
     var texto1 = parseFloat(text); // variable para display 1
@@ -58,7 +58,6 @@ function option(simbolo) {
         }
         acumulador2 = acumulador;
         texto1 = "";
-        simbolo = "";
     }
 
     // Esta condicion sirve para agregar valores al display 1
@@ -69,13 +68,11 @@ function option(simbolo) {
             acumulador2 = acumulador2 + " " + texto1 + " " + simbolo;
         }
         display1.value = acumulador2;
-        
     }
     // if ((condicion) && (simbol != "") && (simbol != "=")) {
     //     display1.value = acumulador2;
     //     acumulador2 += simbolo;
     // }
-
     // if(texto1 != ""){
     //     acumulador2 += " " + texto1 + " " + simbolo;
     //     display1.value = acumulador2;
@@ -94,18 +91,6 @@ function masmenos() {
     display2.value = acumulador;
     text = "";
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Operaciones matematicas basicas */
 function sumar() {
